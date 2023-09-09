@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap");
+
+:root {
+  --white-dim: hsl(0, 0%, 90%);
+  --light-gray: hsl(217, 12%, 34%);
+  --lighter-gray: hsl(217, 12%, 57%);
+  --lightest-gray: hsl(217, 12%, 77%);
+  --medium-gray: hsl(216, 12%, 28%);
+  --darkBlue: hsl(213, 19%, 15%);
+  --veryDarkBlue: hsl(216, 12%, 8%);
+  --darkOrange: rgb(179, 96, 2);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(24, 24, 24);
+  color: white;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.icon-img {
+  width: 8px;
+  height: 8px;
+}
+
+p {
+  color: var(--lighter-gray);
+}
+
+.ratings p {
+  display: inline;
+  text-align: center;
+}
+
+.ratings p:hover {
+  background-color: var(--darkOrange);
+  color: var(--white-dim);
+  cursor: pointer;
+}
+
+.ratings p:active {
+  background-color: var(--lighter-gray);
+  color: var(--white-dim);
+}
+
+.selected {
+  background-color: var(--lighter-gray);
+  color: var(--white-dim);
+}
+
+.wrapper {
+  max-width: 380px;
+  padding: 30px;
+  border-radius: 20px;
+  background-image: linear-gradient(var(--medium-gray), var(--darkBlue));
+  box-shadow: 5px 5px 5px 1px rgba(65, 65, 65, 0.2);
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.circle {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--light-gray);
+  padding: 0.6rem;
+}
+
+.hidden {
+  display: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  padding: 0.7rem;
+  margin: 0 auto;
+}
+
+button {
+  background-color: rgb(179, 96, 2);
+  padding: 1rem;
+  border-radius: 1.5rem;
+  width: 100%;
+  color: var(--white-dim);
+  border: none;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--white-dim);
+  color: var(--darkOrange);
+}
+
+.thank_you_state {
+  text-align: center;
+}
+
+.selection {
+    background-color: var(--medium-gray);
+    border-radius: 15px;
+    width: 60%;       
+    margin: auto;
+}
+
+.selection p {
+    color: var(--darkOrange);
+    font-size: .9rem;
+}
